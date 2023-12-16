@@ -1,0 +1,25 @@
+<%= form_with(model: pet) do |form| %>
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name, style: "margin-bottom: 1rem;"%>
+  </div>
+
+  <div>
+    <%= form.label :address, style: "display: block" %>
+    <%= form.text_field :address, style: "margin-bottom: 1rem;" %>
+  </div>
+
+  <div>
+    <%= form.label :species, style: "display: block" %>
+    <%= form.text_field :specie, style: "margin-bottom: 1rem;" %>
+  </div>
+
+  <div>
+    <%= form.label :found_on, style: "display: block" %>
+    <%= form.date_field :found_on, style: "margin-bottom: 1rem;" %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
